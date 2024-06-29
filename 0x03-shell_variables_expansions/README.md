@@ -1,6 +1,3 @@
-#README.md
-#0x03-shell_variables_expansions#
-
 0. Create a script that creates an alias.
 1. Create a script that prints hello user, where user is the current Linux user.
 2. Add /action to the PATH. /action should be the last directory the shell looks into when looking for a program.
@@ -30,3 +27,7 @@ Do not print oo
 Your script file should contain maximum 64 characters
 13. Write a script that prints a number with two decimal places, followed by a new line.
 The number will be stored in the environment variable NUM.
+14. 
+15.
+16.
+17.

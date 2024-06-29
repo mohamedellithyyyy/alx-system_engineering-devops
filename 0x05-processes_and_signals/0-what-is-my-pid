@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# what is my PID?
-echo $BASHPID
+# Displays its own PID
+
+echo $$
