@@ -1,14 +1,27 @@
-# Mysql
+## MySQL
 
-<p>This project involved learning how to configure database servers in a primary-replica model. I configured the two servers provided to me by Holberton School in a MySQL primary-replica setup with a dummy database, and wrote a Bash script to automate generation of database backups. </p>
+#### Task 0
+Install MySQL5.7.x on both the servers.
 
-## Tasks 📃
+#### Task 1
+Create user to allow access to the replication status on both servers.
 
-- [4-mysql_configuration_primary](4-mysql_configuration_primary): The MySQL `my.conf` configuration file used to set up my first server as a primary database server on the database `tyrell_corp`.
+#### Task 2
+Create database `tyrell_corp` with the table `nexus6` and at least one entry in it.
 
-- [4-mysql_configuration_replica](4-mysql_configuration_replica):  The MySQL `my.conf`  configuration file used to set up my second server as the replica database server on the database `tyrell_corp`.
+#### Task 3
+Create new user for the replica server.
 
-- [5-mysql_backup](5-mysql_backup): Bash script that generates a compressed `tar.gz` archive from a MySQL dump.
-  - Usage: `./5-mysql_backup <MySQL root password>`
-  - Generates a dump containing all MySQL databases on the root server.
-  - Names the resulting tar archive in the format `day-month-year.tar.gz`.
+####Task 4
+[4-mysql_configuration_primary](4-mysql_configuration_primary) is a copy of the MySQL primary configuration (`my.cnf` or `mysqld.cnf`).
+[4-mysql_configuration_replica](4-mysql_configuration_replica) is a copy of the MySQL replica configuration.
+
+#### Task 5
+[5-mysql_backup](5-mysql_backup) is a Bash script that generates a MySQL dump and creates a compressed archive out of it.
+Requirements:
+- The MySQL dump contains all the MySQL databases
+- The MySQL dump is named `backup.sql`
+- The MySQL dump file is compressed to a `tar.gz` archive
+- This archive has the following name format: `day-month-year.tar.gz`
+- The user to connect to the MySQL database is `root`
+- The Bash script accepts one argument that is the password used to connect to the MySQL database
